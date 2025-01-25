@@ -23,8 +23,3 @@ pip install -r devtools/requirements.txt
 
 ### How do get OPENAI Keys
 https://platform.openai.com/docs/overview?lang=python
-
-### If you installed new libraries, check the differences, to add on devtools/requirements.txt
-```shell
-diff <(pip list --not-required --format=freeze) devtools/requirements.txt | grep '^<' | while read -r line; do echo "${line#< }"; done
-```
